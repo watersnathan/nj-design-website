@@ -89,11 +89,13 @@
     {{-- Header --}}
     <header class="w-full py-4 px-6 md:px-16 bg-white/85 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
+
             <a href="{{ route('home') }}" class="flex items-center gap-2 group" aria-label="NJ Design home">
                 <img src="{{ asset('images/logo.png') }}" alt="NJ Design logo"
                     class="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105">
             </a>
 
+            {{-- Desktop Nav --}}
             <nav class="hidden md:flex items-center space-x-1 text-sm font-medium" aria-label="Primary">
                 @foreach ([
                                 ['home', 'Home'],
@@ -102,12 +104,13 @@
                                 ['contact', 'Contact'],
                             ] as [$route, $label])
                             <a href="{{ route($route) }}" class="px-4 py-2 rounded-full transition
-                                                      {{ request()->routeIs($route)
+                                          {{ request()->routeIs($route)
                     ? 'bg-red-500 text-white shadow-sm'
                     : 'text-gray-700 hover:text-red-500 hover:bg-red-50' }}">
                                 {{ $label }}
                             </a>
                 @endforeach
+
                 <a href="{{ route('contact') }}"
                     class="ml-2 bg-black hover:bg-red-500 text-white px-5 py-2.5 rounded-full transition shadow-sm">
                     Hire Us
@@ -134,10 +137,11 @@
                     ] as [$route, $label, $icon])
                     <a href="{{ route($route) }}"
                         class="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition
-                                      {{ request()->routeIs($route) ? 'bg-red-50 text-red-600' : 'text-gray-700 hover:bg-gray-50' }}">
+                                  {{ request()->routeIs($route) ? 'bg-red-50 text-red-600' : 'text-gray-700 hover:bg-gray-50' }}">
                         <i class="fa-solid {{ $icon }} w-4 text-center"></i> {{ $label }}
                     </a>
                 @endforeach
+
                 <a href="{{ route('contact') }}"
                     class="mt-1 flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 text-white px-4 py-3 rounded-xl text-sm font-bold transition">
                     <i class="fa-solid fa-bolt"></i> Hire Us

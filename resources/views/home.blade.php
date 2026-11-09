@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'NJ Design — Websites, Software Systems & Graphics Design')
-@section('meta_description', 'NJ Design builds fast modern websites, custom software systems, and unforgettable brand graphics. Get sorted today.')
+@section('meta_description', 'NJ Design builds fast modern websites, custom software systems, POS systems, and unforgettable brand graphics. Get sorted today.')
 
 @section('content')
     <div
@@ -51,8 +51,9 @@
                     <!-- Subheadline -->
                     <p class="text-lg sm:text-xl text-gray-600 max-w-xl leading-relaxed">
                         In need of a <strong class="text-gray-900">website</strong>, <strong class="text-gray-900">software
-                            system</strong>, or <strong class="text-gray-900">graphics design</strong>? NJ Design crafts
-                        pixel-perfect, high-performance solutions to grow your business.
+                            system</strong>, <strong class="text-gray-900">POS system</strong>, or <strong
+                            class="text-gray-900">graphics design</strong>? NJ Design crafts pixel-perfect, high-performance
+                        solutions to grow your business.
                     </p>
 
                     <!-- CTAs -->
@@ -217,11 +218,13 @@
                         high-converting design.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Changed to 2x2 Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     @foreach ([
                             ['01', 'Modern Websites', 'Lightning-fast, mobile-responsive web platforms tailored specifically to captivate and convert your target audience.', 'fa-globe', 'red'],
                             ['02', 'Custom Software', 'Scalable software systems, portals, and workflow automation built securely to streamline your business operations.', 'fa-code', 'black'],
-                            ['03', 'Graphics & Branding', 'Unique logos, high-end marketing collateral, and digital graphics giving your brand an unforgettable identity.', 'fa-palette', 'red'],
+                            ['03', 'Point of Sale (POS)', 'Smart, reliable POS systems for retail, restaurants, and pharmacies. Track sales, manage inventory, and print receipts with ease.', 'fa-cash-register', 'red'],
+                            ['04', 'Graphics & Branding', 'Unique logos, high-end marketing collateral, and digital graphics giving your brand an unforgettable identity.', 'fa-palette', 'black'],
                         ] as [$num, $title, $desc, $icon, $color])
                         <div
                             class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group reveal">

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'About Us — NJ Design')
-@section('meta_description', 'Meet NJ Design — a team crafting digital excellence through websites, software systems, and creative graphics.')
+@section('meta_description', 'Meet NJ Design — a team crafting digital excellence through websites, software systems, POS systems, and creative graphics.')
 
 @section('content')
     <div class="min-h-screen bg-white py-20 md:py-28 px-6 md:px-16 relative overflow-hidden font-sans">
@@ -22,8 +22,8 @@
             </h1>
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto pt-4">
                 At <strong class="text-black">NJ Design</strong>, we transform ideas into powerful digital experiences.
-                Whether you need a stunning, high-performance website, a complex custom software system, or eye-catching
-                graphic designs, our team has you sorted.
+                Whether you need a stunning, high-performance website, a complex custom software system, a Point of Sale
+                system, or eye-catching graphic designs, our team has you sorted.
             </p>
         </div>
 

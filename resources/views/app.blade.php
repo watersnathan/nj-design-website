@@ -30,7 +30,7 @@
             }
         </style>
 
-        <link rel="icon" href="/favicon.jpeg" type="image/jpeg">
+        <link rel="icon" href="{{ asset('favicon.jpeg') }}" type="image/jpeg">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
         @fonts

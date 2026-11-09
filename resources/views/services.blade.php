@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Our Services — NJ Design')
-@section('meta_description', 'Website development, custom software systems, and graphics design built to grow your business.')
+@section('meta_description', 'Website development, custom software systems, POS systems, and graphics design built to grow your business.')
 
 @section('content')
     <div class="min-h-screen bg-[#fafafa] py-16 md:py-24 px-6 md:px-16 relative overflow-hidden font-sans">
@@ -31,9 +31,9 @@
             </div>
 
             <!-- Services Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
 
-                <!-- Service 1 -->
+                <!-- Service 1: Websites -->
                 <div
                     class="group bg-white rounded-[2rem] p-8 md:p-10 shadow-sm hover:shadow-2xl border border-gray-100 hover:border-red-100 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden reveal">
                     <div
@@ -59,7 +59,7 @@
                     </div>
                 </div>
 
-                <!-- Service 2 -->
+                <!-- Service 2: Software -->
                 <div class="group bg-black rounded-[2rem] p-8 md:p-10 shadow-2xl border border-gray-800 hover:border-gray-700 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden reveal"
                     style="animation-delay: 0.1s;">
                     <div
@@ -85,7 +85,7 @@
                     </div>
                 </div>
 
-                <!-- Service 3 -->
+                <!-- Service 3: POS -->
                 <div class="group bg-white rounded-[2rem] p-8 md:p-10 shadow-sm hover:shadow-2xl border border-gray-100 hover:border-red-100 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden reveal"
                     style="animation-delay: 0.2s;">
                     <div
@@ -94,13 +94,39 @@
                     <div class="relative z-10">
                         <div
                             class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 text-white rounded-2xl flex items-center justify-center text-2xl mb-8 shadow-lg shadow-red-500/30 group-hover:scale-110 transition-transform duration-500">
-                            <i class="fa-solid fa-palette"></i>
+                            <i class="fa-solid fa-cash-register"></i>
                         </div>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Graphics Design</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-8">Striking visual brand identity, modern logo
-                            creation, social media kits, and promotional marketing graphics.</p>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Point of Sale (POS) Systems</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-8">Smart, reliable POS software for retail shops,
+                            restaurants, and pharmacies. Track sales, manage inventory, and print receipts effortlessly.</p>
 
                         <ul class="space-y-3 text-sm font-semibold text-gray-700 border-t border-gray-100 pt-6">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-red-500"></i> Fast
+                                Barcode & Receipt Printing</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-red-500"></i>
+                                Real-time Inventory Tracking</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-red-500"></i> Daily
+                                Sales Reports & Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 4: Graphics -->
+                <div class="group bg-black rounded-[2rem] p-8 md:p-10 shadow-2xl border border-gray-800 hover:border-gray-700 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden reveal"
+                    style="animation-delay: 0.3s;">
+                    <div
+                        class="absolute -right-10 -top-10 w-40 h-40 bg-red-500/20 rounded-full blur-2xl group-hover:bg-red-500/30 transition-colors duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 bg-gray-800 text-white rounded-2xl flex items-center justify-center text-2xl mb-8 shadow-lg group-hover:scale-110 transition-transform duration-500">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-white">Graphics Design</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-8">Striking visual brand identity, modern logo
+                            creation, social media kits, and promotional marketing graphics.</p>
+
+                        <ul class="space-y-3 text-sm font-semibold text-gray-300 border-t border-gray-800 pt-6">
                             <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-red-500"></i> Unique
                                 Brand Identity & Logos</li>
                             <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-red-500"></i> Social
